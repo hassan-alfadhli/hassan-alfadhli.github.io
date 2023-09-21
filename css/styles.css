@@ -1,0 +1,23 @@
+html {
+    direction: rtl;
+    font-family: "Droid Arabic Kufi", "Droid Sans", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    color: #000;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-image: url('/img/background.svg');
+    background-size: 200px;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #ffffff7f;
+}
