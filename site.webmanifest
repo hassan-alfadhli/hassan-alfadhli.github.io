@@ -1,6 +1,7 @@
 {
     "name": "اوتو ميد | Auto Med",
     "short_name": "اوتو ميد",
+    "description": "Auto Med for Car Services | اوتو ميد لصيانة السيارات",
     "icons": [
         {
             "src": "/android-chrome-192x192.png?v=2",
