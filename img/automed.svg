@@ -47,7 +47,7 @@
     <rect x="5" y="70.334" width="90" height="2.73" class="t"></rect>
     <!-- </g> -->
     <g class="pulse">
-        <text x="5" y="89" textLength="90" font-size="14">لصيـانة <tspan>السيـارات</tspan></text>
+        <text x="95" y="89" textLength="90" font-size="14" style="direction: rtl;">لصيـانة <tspan>السيـارات</tspan></text>
         <text x="5" y="88.334" textLength="90" font-size="11.5"><tspan>CAR</tspan> SERVICES</text>
     </g>
 </svg>
