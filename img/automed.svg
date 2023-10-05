@@ -3,15 +3,42 @@
     <!-- https://aspose.app & https://vectorizer.ai/ & https://svgomg.net/ & https://boxy-svg.com & https://favicon.io/ & https://inkscape.org/ -->
     <style>
         * {
+            --time: 2s;
             fill: #000;
             stroke: #000;
         }
-        .t {
+        .t, text > tspan {
             fill: #f27d51;
             stroke: #f27d51;
         }
+        text {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+        }
+        path.t {
+            transform-origin: center;
+            animation: shake var(--time) linear infinite;
+            animation-delay: calc(var(--time) * 0.7);
+        }
+        .pulse > * {
+            animation: pulse calc(var(--time) * 2) linear infinite;
+        }
+        .pulse > :first-child {
+            animation-delay: calc(var(--time) * -1);
+        }
+        @keyframes shake {
+            0%, 10%, 20% { transform: rotate(0deg); }
+            5% { transform: rotate(5deg); }
+            15% { transform: rotate(-5deg); }
+        }
+        @keyframes pulse {
+            0%, 45%, 100% { opacity: 1; }
+            50%, 95% { opacity: 0; }
+        }
     </style>
-    <rect style="fill: #fff;" x="0.5" y="0.5" height="99" width="99" rx="15"/>
+    <rect style="fill: #fff;" x="0.5" y="0.5" height="99" width="99">
+        <animate attributeName="rx" values="0;15;0" dur="5s" repeatCount="indefinite"/>
+    </rect>
     <!-- <g transform="translate(0,7.71)"> -->
     <path d="m 5,60.79 19.74,-44.22 c 6.36,11.19 -1.61,26.23 -1.61,26.23 h 11.29 c 5.06,1.1 4.91,7.44 0,8.72 -4.21,0.19 -13.25,-2.06 -19.45,9.27 z"/>
     <path class="t" d="m 59.24,60.79 h -4.18 c -3.72,0 -7.08,-2.21 -8.56,-5.62 L 27.52,11.51 H 30 c 4.31,0 8.22,2.53 9.99,6.46 z"/>
@@ -19,5 +46,8 @@
     <rect x="5" y="65.334" width="90" height="1.82"></rect>
     <rect x="5" y="70.334" width="90" height="2.73" class="t"></rect>
     <!-- </g> -->
-    <text x="5" y="88.334" textLength="90" style="font-family: 'Arial', sans-serif; font-weight: bold; font-size: 11.5;">CAR SERVICES</text>
+    <g class="pulse">
+        <text x="5" y="89" textLength="90" font-size="14">لصيـانة <tspan>السيـارات</tspan></text>
+        <text x="5" y="88.334" textLength="90" font-size="11.5"><tspan>CAR</tspan> SERVICES</text>
+    </g>
 </svg>
