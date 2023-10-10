@@ -1,0 +1,21 @@
+{
+    "name": "اوتو ميد | Auto Med",
+    "short_name": "اوتو ميد",
+    "description": "Auto Med for Car Services | اوتو ميد لصيانة السيارات",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f27d51",
+    "background_color": "#f27d51",
+    "display": "standalone",
+    "orientation": "portrait"
+}
