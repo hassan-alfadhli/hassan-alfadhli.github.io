@@ -9,6 +9,7 @@
     "preview": "bunx --bun vite preview"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "sass": "^1.69.1",
     "vite": "^4.4.11"
   }
