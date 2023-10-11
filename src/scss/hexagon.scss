@@ -1,5 +1,6 @@
 .hexagon-group {
-    display: flex; justify-content: center;
+    display: flex;
+    justify-content: center
 }
 
 .hexagon-wrapper {
@@ -8,16 +9,7 @@
     text-align: initial;
     width: 100px;
     height: 100px;
-    cursor: pointer;
-}
-
-.fab:before {
-    content: "";
-    display: inline-block;
-    background-size: 50px 50px;
-    width: 50px;
-    height: 50px;
-    transform: translateY(5px);
+    cursor: pointer
 }
 
 .hexagon {
@@ -25,12 +17,12 @@
     width: 46%;
     height: 80%;
     margin: auto;
-    color: white;
+    color: #fff;
     background: linear-gradient(-150deg, white, #dc7814);
     display: flex;
     align-content: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: .5s
 }
 
 .hexagon i {
@@ -40,7 +32,7 @@
     color: transparent;
     background: linear-gradient(45deg, #a58fe9, #e37682);
     background-clip: text;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text
 }
 
 .hexagon:before,
@@ -51,49 +43,29 @@
     height: 100%;
     width: 100%;
     border-radius: 0;
-    transition: 0.5s;
-    transform-origin: center;
+    transition: .5s;
+    transform-origin: center
 }
 
 .hexagon:before {
-    transform: rotateZ(60deg);
+    transform: rotate(60deg)
 }
 
 .hexagon:after {
-    transform: rotateZ(-60deg);
+    transform: rotate(-60deg)
 }
 
 .hexagon:hover {
     border-radius: 50px;
-    transition: 0.5s;
+    transition: .5s
 }
 
 .hexagon:hover:before {
     border-radius: 50px;
-    transition: 0.5s;
+    transition: .5s
 }
 
 .hexagon:hover:after {
     border-radius: 50px;
-    transition: 0.5s;
-}
-
-.fa-whatsapp:before {
-    background-image: url('/img/fa-whatsapp.svg');
-}
-
-.fa-snapchat:before {
-    background-image: url('/img/fa-snapchat.svg');
-}
-
-.fa-phone:before {
-    background-image: url('/img/fa-phone.svg');
-}
-
-.fa-envelope:before {
-    background-image: url('/img/fa-envelope.svg');
-}
-
-.fa-location-dot:before {
-    background-image: url('/img/fa-location-dot.svg');
+    transition: .5s
 }
