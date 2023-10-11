@@ -17,6 +17,7 @@ export default defineConfig({
             plugins: [
                 purgecss({
                     content: ["./**/*.html"],
+                    safelist: ["data-bs-theme"],
                 }),
             ],
         },
