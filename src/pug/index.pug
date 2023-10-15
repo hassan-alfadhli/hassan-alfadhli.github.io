@@ -1,0 +1,48 @@
+include /pug/mixins
+
+doctype html
+html(lang='ar' dir='rtl')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title اوتو ميد | Auto Med
+
+        +opengraph({
+            type: 'website',
+            url: 'https://automed.site/',
+            locale: 'ar_SA',
+            title: 'اوتو ميد | Auto Med',
+            image: 'https://automed.site/android-chrome-512x512.png',
+            description: 'ورشة م. حسن الفضلي لصيانة السيارات بالمدينة المنورة',
+        })
+
+        +favicon({
+            color: '#f27d51',
+            sizes: [32, 16],
+            ico: true,
+            apple: 180,
+            safari: true,
+            mstile: '#da532c',
+            manifest: true,
+        })
+    body
+        #content.container.text-center
+            .row.row-cols-1
+                .col
+                    h1 اوتو ميد | Auto Med
+                .col
+                    img(src='/img/automed.svg' width='195px' height='195px')
+                .col
+                    h2 المهندس/ حسن الفضلي
+                .col
+                    +hexagon([
+                        ['fab fa-whatsapp', 'https://wa.me/+966542182669'],
+                        ['fab fa-snapchat', 'https://www.snapchat.com/add/hassan.alfadhli'],
+                    ])
+                .col
+                    +hexagon([
+                        ['fab fa-phone', 'tel:+966542182669'],
+                        ['fab fa-envelope', 'mailto:hassan.alfadhli1996@icloud.com'],
+                        ['fab fa-location-dot', 'https://maps.app.goo.gl/rBXSuxP8yhepAdTY7'],
+                    ])
+        script(type='module' src='/js/index.js')
